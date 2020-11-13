@@ -1,0 +1,78 @@
+﻿@model WasteRegistryViewModel
+<div class="modal-body">
+    <div class="row">
+        <div class="form-group col-md-6">
+            @Html.HiddenFor(m => m.Id)
+            <label id="MonthLbl" for="Month">Ay*</label>
+            <select required id="MonthTxt" class="form-control">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+        </div>
+        <div class="form-group col-md-6">
+            <label id="StoreLbl" for="Store">Mağaza*</label>
+            <select required id="StoreTxt" class="form-control">
+                <option value="Store1">Store1</option>
+                <option value="Store2">Store2</option>
+                <option value="Store3">Store3</option>
+                <option value="Store4">Store4</option>
+                <option value="Store5">Store5</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div id="WasteKindDiv" class="form-group col-md-6">
+            <label id="WasteKindLbl" for="WasteKind">Waste Kind*</label>
+            <select id="WasteKindTxt" class="form-control">
+                <option value="WasteKind1">WasteKind1</option>
+                <option value="WasteKind2">WasteKind2</option>
+            </select>
+
+        </div>
+        <div id="WasteTypeDiv" class="form-group col-md-6">
+            <label id="WasteTypeLbl" for="WasteType">Waste Type*</label>
+            <select id="WasteTypeTxt" class="form-control">
+                <option value="WasteType1">WasteType1</option>
+                <option value="WasteType2">WasteType2</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label id="QuantityLbl" for="Quantity">Miktar*</label>
+            <input required id="QuantityTxt" class="form-control" type="text">
+        </div>
+        <div class="form-group col-md-6">
+            <label id="UnitLbl" for="Unit">Birim*</label>
+            <select id="UnitSelect" class="form-control">
+                <option value="Unit1">Unit1</option>
+                <option value="Unit2">Unit2</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label id="RecipientCompanyLbl" for="RecipientCompany">Teslim Alan Firma*</label>
+            <select id="RecipientCompanyTxt" class="form-control">
+                <option value="Company1">Company1</option>
+                <option value="Company2">Company2</option>
+                <option value="Company3">Company3</option>
+                <option value="Company4">Company4</option>
+            </select>
+        </div>
+        <div class="form-group col-md-6">
+            <label id="WasteDateLbl" for="Unit">Atık Tarihi*</label>
+            <input type="date" id="WasteDateTxt" class="form-control ">
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-12">
+            <label id="ContentLbl" for="Content">Açıklama</label>
+            <textarea id="ContentTxt" rows="4" class="form-control"></textarea>
+        </div>
+    </div>
+</div>
